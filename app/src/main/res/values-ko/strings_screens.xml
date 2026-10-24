@@ -273,13 +273,13 @@
     <string name="word_delimiter_toast_invalid">이미 존재하거나 유효하지 않습니다</string>
     <string name="word_delimiter_toast_reset">단어 구분 기호가 기본값으로 재설정되었습니다</string>
     <string name="word_delimiters_screen_title">단어 구분 기호</string>
-    <string name="easter_egg_thank_you">PixelPlayerOSS를 이용해 주셔서 감사합니다!</string>
-    <string name="setup_external_services_subtitle">PixelPlayerOSS는 기본적으로 오프라인으로 작동합니다. 원하는 조회 기능만 활성화하세요.</string>
-    <string name="setup_permission_media_description">음악 라이브러리를 구성하려면 PixelPlayerOSS가 오디오 파일에 접근할 수 있어야 합니다.</string>
-    <string name="setup_permission_alarms_description">선택 사항이지만, 취침 타이머를 사용하며 PixelPlayerOSS가 정확한 시간에 재생을 멈추게 하려면 허용하는 것이 좋습니다.</string>
-    <string name="setup_backup_have_description">이미 PixelPlayerOSS 백업이 있다면 지금 복구하여 이 기기의 나머지 설정 대부분을 건너뛸 수 있습니다.</string>
-    <string name="setup_theme_dark_description">PixelPlayerOSS의 기본 Material 3 다크 룩입니다.</string>
-    <string name="home_empty_placeholder_subtitle">PixelPlayerOSS가 곡을 찾거나 소스를 동기화하면 여기에 믹스가 표시됩니다.</string>
-    <string name="crash_report_share_subject">PixelPlayerOSS 크래시 보고서</string>
-    <string name="about_support_title">PixelPlayerOSS 후원하기</string>
+    <string name="easter_egg_thank_you">NekoPlayer를 이용해 주셔서 감사합니다!</string>
+    <string name="setup_external_services_subtitle">NekoPlayer는 기본적으로 오프라인으로 작동합니다. 원하는 조회 기능만 활성화하세요.</string>
+    <string name="setup_permission_media_description">음악 라이브러리를 구성하려면 NekoPlayer가 오디오 파일에 접근할 수 있어야 합니다.</string>
+    <string name="setup_permission_alarms_description">선택 사항이지만, 취침 타이머를 사용하며 NekoPlayer가 정확한 시간에 재생을 멈추게 하려면 허용하는 것이 좋습니다.</string>
+    <string name="setup_backup_have_description">이미 NekoPlayer 백업이 있다면 지금 복구하여 이 기기의 나머지 설정 대부분을 건너뛸 수 있습니다.</string>
+    <string name="setup_theme_dark_description">NekoPlayer의 기본 Material 3 다크 룩입니다.</string>
+    <string name="home_empty_placeholder_subtitle">NekoPlayer가 곡을 찾거나 소스를 동기화하면 여기에 믹스가 표시됩니다.</string>
+    <string name="crash_report_share_subject">NekoPlayer 크래시 보고서</string>
+    <string name="about_support_title">NekoPlayer 후원하기</string>
 </resources>

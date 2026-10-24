@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   mirror:
-    if: github.repository == 'PixelPlayerHQ/PixelPlayerOSS'
+    if: github.repository == 'hcy917/NekoPlayer'
     runs-on: ubuntu-latest
 
     steps:
@@ -42,6 +42,6 @@ jobs:
           set -euo pipefail
           git clone --bare "https://github.com/${GITHUB_REPOSITORY}.git" repo.git
           cd repo.git
-          git remote add gitlab git@gitlab.com:lostf1sh1/PixelPlayerOSS.git
+          git remote add gitlab git@gitlab.com:hcy917/NekoPlayer.git
           git push --prune gitlab '+refs/heads/*:refs/heads/*'
           git push --prune gitlab '+refs/tags/*:refs/tags/*'

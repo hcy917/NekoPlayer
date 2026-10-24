@@ -74,7 +74,7 @@
     <string name="rebuild">Yeniden Oluştur</string>
     <string name="search_no_songs_match">Aramanızla eşleşen şarkı bulunamadı.</string>
     <string name="search_songs_by_title_artist_album">Başlık, sanatçı veya albüme göre ara</string>
-    <string name="setcat_about_pixelplayer_subtitle">Uygulama sürümü, katkıda bulunanlar ve daha fazlası.</string>
+    <string name="setcat_about_nekoplayer_subtitle">Uygulama sürümü, katkıda bulunanlar ve daha fazlası.</string>
     <string name="setcat_album_art_cache_limit">Albüm Kapağı Önbellek Sınırı</string>
     <string name="setcat_album_art_palette_subtitle">Mevcut: %1$s. Canlı önizlemeyi açın ve stil seçin.</string>
     <string name="setcat_album_art_palette_title">Albüm Kapağı Palet Stili</string>
@@ -315,7 +315,7 @@
     <string name="updates_status_reinstall_signature">%1$s sürümü bu derlemenin üzerine yüklenemez: farklı bir anahtarla imzalanmış ya da paket adı farklı (örneğin bir debug derlemesi).</string>
     <string name="updates_status_downloading">%1$s indiriliyor…</string>
     <string name="updates_status_downloading_progress">%1$s indiriliyor… %%%2$d</string>
-    <string name="updates_status_permission">%1$s güncellemesini bitirmek için PixelPlayerOSS\'in uygulama yüklemesine izin ver.</string>
+    <string name="updates_status_permission">%1$s güncellemesini bitirmek için NekoPlayer\'in uygulama yüklemesine izin ver.</string>
     <string name="updates_status_confirm">%1$s kurulumunu sistem penceresinde onayla.</string>
     <string name="updates_status_installing">%1$s yükleniyor…</string>
     <string name="updates_error_check">Güncelleme sunucusuna ulaşılamadı. Bağlantını kontrol edip tekrar dene.</string>
@@ -336,7 +336,7 @@
     <string name="updates_switch_dialog_title">Yeniden yükleme gerekli</string>
     <string name="updates_switch_dialog_body">Kararlı derlemeler F-Droid\'den, alfa derlemeler GitHub\'dan gelir. Farklı anahtarlarla imzalandıkları için Android biri diğerinin üzerine güncelleme yapamaz. Uygulamayı kaldırmak verilerini siler; önce yedek al.</string>
     <string name="updates_switch_step_backup">1. Bir yedek oluştur ve dosyayı uygulamanın dışına kaydet.</string>
-    <string name="updates_switch_step_download_stable">2. F-Droid yüklü değilse yükle ve PixelPlayerOSS\'i orada aç.</string>
+    <string name="updates_switch_step_download_stable">2. F-Droid yüklü değilse yükle ve NekoPlayer\'i orada aç.</string>
     <string name="updates_switch_step_download_alpha">2. %1$s APK dosyasını indir.</string>
     <string name="updates_switch_step_uninstall">3. Bu uygulamayı kaldır, yeni derlemeyi yükle ve yedeğini geri yükle.</string>
     <string name="updates_switch_action_backup">Yedekle</string>
@@ -346,10 +346,10 @@
     <string name="updates_switch_action_close">Kapat</string>
     <string name="updates_notification_channel">Uygulama güncellemeleri</string>
     <string name="updates_notification_title">Güncelleme var</string>
-    <string name="updates_notification_text">PixelPlayerOSS %1$s yüklenmeye hazır.</string>
-    <string name="updates_notification_confirm_title">PixelPlayerOSS güncellemesini tamamla</string>
+    <string name="updates_notification_text">NekoPlayer %1$s yüklenmeye hazır.</string>
+    <string name="updates_notification_confirm_title">NekoPlayer güncellemesini tamamla</string>
     <string name="updates_notification_confirm_text">Kurulumu onaylamak için dokun.</string>
-    <string name="setcat_about_pixelplayer_title">PixelPlayerOSS Hakkında</string>
+    <string name="setcat_about_nekoplayer_title">NekoPlayer Hakkında</string>
     <string name="setcat_playback_behavior">Oynatma</string>
     <string name="setcat_autoplay_on_skip_title">Atlarken otomatik oynat</string>
     <string name="setcat_autoplay_on_skip_subtitle">Duraklatılmışken başka bir şarkıya geçtiğinizde oynatmayı otomatik olarak başlatır.</string>

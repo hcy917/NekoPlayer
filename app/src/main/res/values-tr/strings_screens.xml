@@ -228,7 +228,7 @@
     <string name="setup_navbar_footer">Bunu daha sonra Ayarlar &gt; Görünüm &gt; Navigasyon Çubuğu Stili bölümünden değiştirebilirsiniz.</string>
     <string name="setup_permission_alarms_title">Alarmlar ve Hatırlatıcılar</string>
     <string name="setup_battery_optimization_title">Pil Optimizasyonu</string>
-    <string name="setup_battery_optimization_description">Bazı Android cihazlar arka plan uygulamalarını agresif bir şekilde kapatır. Beklenmedik oynatma kesintilerini önlemek için PixelPlayerOSS için pil optimizasyonunu devre dışı bırakın.</string>
+    <string name="setup_battery_optimization_description">Bazı Android cihazlar arka plan uygulamalarını agresif bir şekilde kapatır. Beklenmedik oynatma kesintilerini önlemek için NekoPlayer için pil optimizasyonunu devre dışı bırakın.</string>
     <string name="setup_disable_battery_optimization">Optimizasyonu Devre Dışı Bırak</string>
     <string name="setup_permission_granted">İzin Verildi</string>
     <string name="setup_permission_media_title">Medya İzni</string>
@@ -276,13 +276,13 @@
     <string name="word_delimiter_toast_invalid">Zaten var veya geçersiz</string>
     <string name="word_delimiter_toast_reset">Kelime sınırlayıcıları varsayılana sıfırlandı</string>
     <string name="word_delimiters_screen_title">Kelime Sınırlayıcıları</string>
-    <string name="easter_egg_thank_you">PixelPlayerOSS\'i kullandığınız için teşekkürler!</string>
-    <string name="setup_external_services_subtitle">PixelPlayerOSS varsayılan olarak çevrimdışı çalışır. Yalnızca istediğiniz aramaları etkinleştirin.</string>
-    <string name="setup_permission_media_description">PixelPlayerOSS\'in müzik kitaplığınızı oluşturabilmesi için ses dosyalarınıza erişmesi gerekir.</string>
-    <string name="setup_permission_alarms_description">İsteğe bağlıdır, ancak uyku zamanlayıcısını kullanıyorsanız ve PixelPlayerOSS\'in oynatmayı tam zamanında durdurmasını istiyorsanız önerilir.</string>
-    <string name="setup_backup_have_description">Zaten bir PixelPlayerOSS yedeğiniz varsa şimdi geri yükleyin ve bu cihazdaki kurulumun çoğunu atlayın.</string>
-    <string name="setup_theme_dark_description">PixelPlayerOSS için varsayılan Material 3 koyu görünümü.</string>
-    <string name="home_empty_placeholder_subtitle">PixelPlayerOSS şarkı bulduğunda veya bir kaynağı senkronize ettiğinde miksiniz burada görünecek.</string>
-    <string name="crash_report_share_subject">PixelPlayerOSS çökme raporu</string>
-    <string name="about_support_title">PixelPlayerOSS\'e destek ol</string>
+    <string name="easter_egg_thank_you">NekoPlayer\'i kullandığınız için teşekkürler!</string>
+    <string name="setup_external_services_subtitle">NekoPlayer varsayılan olarak çevrimdışı çalışır. Yalnızca istediğiniz aramaları etkinleştirin.</string>
+    <string name="setup_permission_media_description">NekoPlayer\'in müzik kitaplığınızı oluşturabilmesi için ses dosyalarınıza erişmesi gerekir.</string>
+    <string name="setup_permission_alarms_description">İsteğe bağlıdır, ancak uyku zamanlayıcısını kullanıyorsanız ve NekoPlayer\'in oynatmayı tam zamanında durdurmasını istiyorsanız önerilir.</string>
+    <string name="setup_backup_have_description">Zaten bir NekoPlayer yedeğiniz varsa şimdi geri yükleyin ve bu cihazdaki kurulumun çoğunu atlayın.</string>
+    <string name="setup_theme_dark_description">NekoPlayer için varsayılan Material 3 koyu görünümü.</string>
+    <string name="home_empty_placeholder_subtitle">NekoPlayer şarkı bulduğunda veya bir kaynağı senkronize ettiğinde miksiniz burada görünecek.</string>
+    <string name="crash_report_share_subject">NekoPlayer çökme raporu</string>
+    <string name="about_support_title">NekoPlayer\'e destek ol</string>
 </resources>

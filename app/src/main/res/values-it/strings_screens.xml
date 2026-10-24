@@ -228,7 +228,7 @@
     <string name="setup_navbar_footer">Puoi cambiarlo in seguito in Impostazioni &gt; Aspetto &gt; Stile barra navigazione.</string>
     <string name="setup_permission_alarms_title">Allarmi e promemoria</string>
     <string name="setup_battery_optimization_title">Ottimizzazione batteria</string>
-    <string name="setup_battery_optimization_description">Alcuni dispositivi Android chiudono aggressivamente le app in background. Disabilita l\'ottimizzazione batteria per PixelPlayerOSS per prevenire interruzioni di riproduzione impreviste.</string>
+    <string name="setup_battery_optimization_description">Alcuni dispositivi Android chiudono aggressivamente le app in background. Disabilita l\'ottimizzazione batteria per NekoPlayer per prevenire interruzioni di riproduzione impreviste.</string>
     <string name="setup_disable_battery_optimization">Disabilita ottimizzazione</string>
     <string name="setup_permission_granted">Permesso concesso</string>
     <string name="setup_permission_media_title">Permesso media</string>
@@ -276,13 +276,13 @@
     <string name="word_delimiter_toast_invalid">Esiste già o non è valido</string>
     <string name="word_delimiter_toast_reset">Delimitatori parola reimpostati ai predefiniti</string>
     <string name="word_delimiters_screen_title">Delimitatori parola</string>
-    <string name="easter_egg_thank_you">Grazie per aver scelto PixelPlayerOSS!</string>
-    <string name="setup_external_services_subtitle">PixelPlayerOSS funziona offline per impostazione predefinita. Attiva solo le ricerche che vuoi.</string>
-    <string name="setup_permission_media_description">PixelPlayerOSS ha bisogno di accedere ai tuoi file audio per creare la tua libreria musicale.</string>
-    <string name="setup_permission_alarms_description">Facoltativo, ma consigliato se usi il timer di spegnimento e vuoi che PixelPlayerOSS interrompa la riproduzione esattamente all\'ora impostata.</string>
-    <string name="setup_backup_have_description">Se hai già un backup di PixelPlayerOSS, ripristinalo ora e salta gran parte della configurazione rimanente su questo dispositivo.</string>
-    <string name="setup_theme_dark_description">L\'aspetto scuro Material 3 predefinito per PixelPlayerOSS.</string>
-    <string name="home_empty_placeholder_subtitle">Il tuo mix apparirà qui quando PixelPlayerOSS troverà dei brani o sincronizzerà una sorgente.</string>
-    <string name="crash_report_share_subject">Report crash di PixelPlayerOSS</string>
-    <string name="about_support_title">Sostieni PixelPlayerOSS</string>
+    <string name="easter_egg_thank_you">Grazie per aver scelto NekoPlayer!</string>
+    <string name="setup_external_services_subtitle">NekoPlayer funziona offline per impostazione predefinita. Attiva solo le ricerche che vuoi.</string>
+    <string name="setup_permission_media_description">NekoPlayer ha bisogno di accedere ai tuoi file audio per creare la tua libreria musicale.</string>
+    <string name="setup_permission_alarms_description">Facoltativo, ma consigliato se usi il timer di spegnimento e vuoi che NekoPlayer interrompa la riproduzione esattamente all\'ora impostata.</string>
+    <string name="setup_backup_have_description">Se hai già un backup di NekoPlayer, ripristinalo ora e salta gran parte della configurazione rimanente su questo dispositivo.</string>
+    <string name="setup_theme_dark_description">L\'aspetto scuro Material 3 predefinito per NekoPlayer.</string>
+    <string name="home_empty_placeholder_subtitle">Il tuo mix apparirà qui quando NekoPlayer troverà dei brani o sincronizzerà una sorgente.</string>
+    <string name="crash_report_share_subject">Report crash di NekoPlayer</string>
+    <string name="about_support_title">Sostieni NekoPlayer</string>
 </resources>

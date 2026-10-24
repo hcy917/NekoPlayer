@@ -234,7 +234,7 @@
     <string name="setup_navbar_footer">Позже это можно изменить в Настройки &gt; Внешний вид &gt; Стиль панели навигации.</string>
     <string name="setup_permission_alarms_title">Будильники и напоминания</string>
     <string name="setup_battery_optimization_title">Оптимизация батареи</string>
-    <string name="setup_battery_optimization_description">Некоторые устройства Android агрессивно закрывают фоновые приложения. Отключите оптимизацию батареи для PixelPlayerOSS, чтобы избежать неожиданных прерываний воспроизведения.</string>
+    <string name="setup_battery_optimization_description">Некоторые устройства Android агрессивно закрывают фоновые приложения. Отключите оптимизацию батареи для NekoPlayer, чтобы избежать неожиданных прерываний воспроизведения.</string>
     <string name="setup_disable_battery_optimization">Отключить оптимизацию</string>
     <string name="setup_permission_granted">Разрешение предоставлено</string>
     <string name="setup_permission_media_title">Доступ к медиафайлам</string>
@@ -282,13 +282,13 @@
     <string name="word_delimiter_toast_invalid">Уже существует или недопустим</string>
     <string name="word_delimiter_toast_reset">Словесные разделители сброшены</string>
     <string name="word_delimiters_screen_title">Словесные разделители</string>
-    <string name="easter_egg_thank_you">Спасибо, что пользуетесь PixelPlayerOSS!</string>
-    <string name="setup_external_services_subtitle">По умолчанию PixelPlayerOSS работает офлайн. Включайте только те онлайн-запросы, которые вам нужны.</string>
-    <string name="setup_permission_media_description">PixelPlayerOSS нужен доступ к вашим аудиофайлам, чтобы создать музыкальную медиатеку.</string>
-    <string name="setup_permission_alarms_description">Необязательно, но рекомендуется, если вы используете таймер сна и хотите, чтобы PixelPlayerOSS останавливал воспроизведение точно вовремя.</string>
-    <string name="setup_backup_have_description">Если у вас уже есть резервная копия PixelPlayerOSS, восстановите её сейчас и пропустите большую часть оставшейся настройки на этом устройстве.</string>
-    <string name="setup_theme_dark_description">Стандартная тёмная тема Material 3 для PixelPlayerOSS.</string>
-    <string name="home_empty_placeholder_subtitle">Ваш микс появится здесь, когда PixelPlayerOSS найдёт треки или синхронизирует источник.</string>
-    <string name="crash_report_share_subject">Отчёт о сбое PixelPlayerOSS</string>
-    <string name="about_support_title">Поддержите PixelPlayerOSS</string>
+    <string name="easter_egg_thank_you">Спасибо, что пользуетесь NekoPlayer!</string>
+    <string name="setup_external_services_subtitle">По умолчанию NekoPlayer работает офлайн. Включайте только те онлайн-запросы, которые вам нужны.</string>
+    <string name="setup_permission_media_description">NekoPlayer нужен доступ к вашим аудиофайлам, чтобы создать музыкальную медиатеку.</string>
+    <string name="setup_permission_alarms_description">Необязательно, но рекомендуется, если вы используете таймер сна и хотите, чтобы NekoPlayer останавливал воспроизведение точно вовремя.</string>
+    <string name="setup_backup_have_description">Если у вас уже есть резервная копия NekoPlayer, восстановите её сейчас и пропустите большую часть оставшейся настройки на этом устройстве.</string>
+    <string name="setup_theme_dark_description">Стандартная тёмная тема Material 3 для NekoPlayer.</string>
+    <string name="home_empty_placeholder_subtitle">Ваш микс появится здесь, когда NekoPlayer найдёт треки или синхронизирует источник.</string>
+    <string name="crash_report_share_subject">Отчёт о сбое NekoPlayer</string>
+    <string name="about_support_title">Поддержите NekoPlayer</string>
 </resources>

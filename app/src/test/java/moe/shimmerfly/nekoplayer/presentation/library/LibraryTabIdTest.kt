@@ -1,0 +1,74 @@
+package moe.shimmerfly.nekoplayer.presentation.library
+
+import moe.shimmerfly.nekoplayer.data.model.SortOption
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertIterableEquals
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Test
+
+class LibraryTabIdTest {
+
+    @Test
+    fun `decodeLibraryTabOrder returns default order when stored value is null`() {
+        val order = decodeLibraryTabOrder(null)
+        assertIterableEquals(LibraryTabId.defaultOrder, order)
+    }
+
+    @Test
+    fun `decodeLibraryTabOrder preserves known order and restores missing tabs`() {
+        val storedKeys = listOf(
+            LibraryTabId.Liked.stableKey,
+            "UNKNOWN",
+            LibraryTabId.Playlists.stableKey,
+            LibraryTabId.Liked.stableKey
+        )
+        val order = decodeLibraryTabOrder(Json.encodeToString(storedKeys))
+
+        assertEquals(LibraryTabId.Liked, order.first(), "First entry should match stored stable key")
+        assertTrue(order.containsAll(LibraryTabId.defaultOrder), "All default tabs should be present exactly once")
+        assertEquals(LibraryTabId.defaultOrder.size, order.size)
+    }
+
+    @Test
+    fun `decodeLibraryTabOrder restores Genres at the end of an order saved before it existed`() {
+        val legacyKeys = listOf("SONGS", "ALBUMS", "ARTIST", "PLAYLISTS", "FOLDERS", "LIKED")
+
+        val order = decodeLibraryTabOrder(Json.encodeToString(legacyKeys))
+
+        assertEquals(legacyKeys, order.dropLast(1).map { it.stableKey })
+        assertEquals(LibraryTabId.Genres, order.last())
+    }
+
+    @Test
+    fun `Genres tab offers name and song count sorts and keeps a stable key`() {
+        assertEquals("GENRES", LibraryTabId.Genres.stableKey)
+        assertEquals(SortOption.GENRES, LibraryTabId.Genres.sortOptions)
+        assertEquals(
+            LibraryTabId.Genres.stableKey,
+            moe.shimmerfly.nekoplayer.data.model.LibraryTabId.GENRES.storageKey
+        )
+    }
+
+    @Test
+    fun `sort associations remain tied to tab ids after reordering`() {
+        val persistedSorts = LibraryTabId.defaultOrder.associateWith { tab ->
+            tab.sortOptions.firstOrNull() ?: SortOption.SongTitleAZ
+        }
+
+        val shuffledOrder = decodeLibraryTabOrder(
+            Json.encodeToString(
+                listOf(
+                    LibraryTabId.Folders.stableKey,
+                    LibraryTabId.Songs.stableKey,
+                    LibraryTabId.Playlists.stableKey
+                )
+            )
+        )
+
+        shuffledOrder.forEach { tab ->
+            assertEquals(persistedSorts[tab], persistedSorts.getValue(tab))
+        }
+    }
+}

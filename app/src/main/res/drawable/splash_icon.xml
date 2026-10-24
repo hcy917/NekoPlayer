@@ -3,7 +3,7 @@
   Splash-screen icon: the adaptive-icon monochrome mark (drawable/new_monochrome), tinted,
   on the same 108dp canvas so it lands inside the splash icon's safe circle.
 
-  PixelPlayerSplash (presentation/splash) reads this exact drawable to draw its first frame,
+  NekoPlayerSplash (presentation/splash) reads this exact drawable to draw its first frame,
   so the system splash hands over to the animated one without a jump. It must keep the body
   path first and the note path second. Keep it in sync with new_monochrome if the mark changes.
 -->

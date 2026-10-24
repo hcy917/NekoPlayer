@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.lostf1sh.pixelplayeross.baselineprofile"
+    namespace = "moe.shimmerfly.nekoplayer.baselineprofile"
     compileSdk = 37
 
     compileOptions {

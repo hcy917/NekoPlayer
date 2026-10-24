@@ -276,13 +276,13 @@
     <string name="word_delimiter_toast_invalid">Finnes allerede eller er ugyldig</string>
     <string name="word_delimiter_toast_reset">Orddelimitere tilbakestilt til standard</string>
     <string name="word_delimiters_screen_title">Orddelimitere</string>
-    <string name="easter_egg_thank_you">Takk for at du bruker PixelPlayerOSS!</string>
-    <string name="setup_external_services_subtitle">PixelPlayerOSS fungerer offline som standard. Aktiver bare oppslagene du vil ha.</string>
-    <string name="setup_permission_media_description">PixelPlayerOSS trenger tilgang til lydfilene dine for å bygge musikkbiblioteket ditt.</string>
-    <string name="setup_permission_alarms_description">Valgfritt, men anbefalt hvis du bruker Sleep timer og vil at PixelPlayerOSS skal stoppe avspillingen nøyaktig i tide.</string>
-    <string name="setup_backup_have_description">Hvis du allerede har en PixelPlayerOSS-sikkerhetskopi, kan du gjenopprette den nå og hoppe over det meste av resten av oppsettet på denne enheten.</string>
-    <string name="setup_theme_dark_description">Standard mørkt Material 3-utseende for PixelPlayerOSS.</string>
-    <string name="home_empty_placeholder_subtitle">Miksen din vises her når PixelPlayerOSS finner sanger eller synkroniserer en kilde.</string>
-    <string name="crash_report_share_subject">Krasjrapport for PixelPlayerOSS</string>
-    <string name="about_support_title">Støtt PixelPlayerOSS</string>
+    <string name="easter_egg_thank_you">Takk for at du bruker NekoPlayer!</string>
+    <string name="setup_external_services_subtitle">NekoPlayer fungerer offline som standard. Aktiver bare oppslagene du vil ha.</string>
+    <string name="setup_permission_media_description">NekoPlayer trenger tilgang til lydfilene dine for å bygge musikkbiblioteket ditt.</string>
+    <string name="setup_permission_alarms_description">Valgfritt, men anbefalt hvis du bruker Sleep timer og vil at NekoPlayer skal stoppe avspillingen nøyaktig i tide.</string>
+    <string name="setup_backup_have_description">Hvis du allerede har en NekoPlayer-sikkerhetskopi, kan du gjenopprette den nå og hoppe over det meste av resten av oppsettet på denne enheten.</string>
+    <string name="setup_theme_dark_description">Standard mørkt Material 3-utseende for NekoPlayer.</string>
+    <string name="home_empty_placeholder_subtitle">Miksen din vises her når NekoPlayer finner sanger eller synkroniserer en kilde.</string>
+    <string name="crash_report_share_subject">Krasjrapport for NekoPlayer</string>
+    <string name="about_support_title">Støtt NekoPlayer</string>
 </resources>

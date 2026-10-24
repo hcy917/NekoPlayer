@@ -1,4 +1,4 @@
-PixelPlayerOSS 0.4.0:
+NekoPlayer 0.4.0:
 
 * In-app updates: Stable from F-Droid, Alpha from GitHub, with an optional daily check.
 * Smart Mix composer: describe a mix, tune its energy and length, and preview it. Fully offline.

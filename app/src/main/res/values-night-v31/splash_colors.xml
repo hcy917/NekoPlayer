@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- System splash colours. PixelPlayerSplash starts from these and blends into the app theme. -->
+<!-- System splash colours. NekoPlayerSplash starts from these and blends into the app theme. -->
 <resources>
     <color name="splash_background">@android:color/system_neutral1_900</color>
     <color name="splash_glyph">@android:color/system_accent1_200</color>

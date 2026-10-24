@@ -1,11 +1,14 @@
 # Changelog
 
-All notable changes to PixelPlayerOSS will be documented in this file.
+All notable changes to NekoPlayer will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+- The project is now **NekoPlayer**. The application name, package id (`moe.shimmerfly.nekoplayer`), Room database and schema names, content-provider authorities, widget and service classes, CI keystore names, and release asset names were renamed. This is a different application id, so NekoPlayer installs alongside an existing PixelPlayerOSS install instead of updating it; library and settings carry over through the in-app backup/restore.
+
 ### Fixed
-- Navidrome/Subsonic (including Gonic) and Jellyfin covers no longer hold up other artwork while a slow server answers. A cover download kept one of the threads that decode every image in the app until the server replied, even after its list item had scrolled away, so a burst of slow covers left the rest of the library on placeholders. Downloads now run off those threads and stop as soon as their cover leaves the screen, and a cover shown in several places at once is downloaded once instead of once per place ([#118](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/118)).
+- Navidrome/Subsonic (including Gonic) and Jellyfin covers no longer hold up other artwork while a slow server answers. A cover download kept one of the threads that decode every image in the app until the server replied, even after its list item had scrolled away, so a burst of slow covers left the rest of the library on placeholders. Downloads now run off those threads and stop as soon as their cover leaves the screen, and a cover shown in several places at once is downloaded once instead of once per place ([#118](https://github.com/hcy917/NekoPlayer/issues/118)).
 
 ## [0.4.0] - 2026-10-17
 
@@ -24,7 +27,7 @@ All notable changes to PixelPlayerOSS will be documented in this file.
 - Battery optimization exemption prompt in setup and Playback settings.
 - "Show scrollbar" setting, grid view for the Playlists tab, and customizable sidebar shortcuts.
 - Redesigned album and artist headers, segmented library lists, a new Stats screen with Heavy Rotation drill-down, and an animated splash.
-- Playback speed in exact 0.05× steps from 0.25× to 3×, with − and + buttons, presets, and a typed value with two decimals. The same controls open from a new Speed button in the Next up queue, which is highlighted while the speed isn't 1× ([#145](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/145)).
+- Playback speed in exact 0.05× steps from 0.25× to 3×, with − and + buttons, presets, and a typed value with two decimals. The same controls open from a new Speed button in the Next up queue, which is highlighted while the speed isn't 1× ([#145](https://github.com/hcy917/NekoPlayer/issues/145)).
 - "Auto-play on skip" setting (Settings → Behavior, on by default): Next, Previous, and the mini player's swipe-to-skip start playback when you skip while paused.
 - Hide library tabs you don't use from the Reorder library tabs sheet, and bring them back from its Hidden tabs group.
 - Multi-selection on genre pages.
@@ -46,7 +49,7 @@ All notable changes to PixelPlayerOSS will be documented in this file.
 - Performance reports include library scan, metadata, and artwork timings.
 
 ### Fixed
-- Navidrome/Subsonic and Jellyfin album artwork no longer gets stuck on the placeholder after a few songs. The player loaded cloud covers through the app's own artwork content provider, and concurrent loads could exhaust the image decoder slots that provider waited on, freezing every artwork load until the app restarted. Server error responses are also no longer cached as cover images, and concurrent cover downloads no longer corrupt each other's cache file ([#138](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/138)).
+- Navidrome/Subsonic and Jellyfin album artwork no longer gets stuck on the placeholder after a few songs. The player loaded cloud covers through the app's own artwork content provider, and concurrent loads could exhaust the image decoder slots that provider waited on, freezing every artwork load until the app restarted. Server error responses are also no longer cached as cover images, and concurrent cover downloads no longer corrupt each other's cache file ([#138](https://github.com/hcy917/NekoPlayer/issues/138)).
 - System media controls can load album artwork through the app's artwork URI again. System UI reads that URI without connecting as a media controller, so it never received the per-track read grant and was refused on every track; privileged media surfaces (holders of `MEDIA_CONTENT_CONTROL`) may now open the artwork the session currently shows, while every other cover, and every other app, still needs the explicit grant. Stock Android fell back to the session bitmap, but System UIs without that fallback could show no artwork.
 - Jellyfin playlists no longer go missing on Jellyfin 10.10 and newer, where playlists can hold mixed content and audio playlists are often reported without a media type.
 - With crossfade on, queues longer than 200 songs no longer shrink to a 200-song window after a transition, and the shortened queue is no longer restored after the app is killed.
@@ -66,9 +69,9 @@ All notable changes to PixelPlayerOSS will be documented in this file.
 - Kugou word-by-word lyrics get correct spacing. Plain lyrics no longer have romanization written into the text. Large Apple Music TTML files and `<smil>`-rooted TTML import correctly. Titles containing `$`, `#`, or `%` are no longer cut short when searching for lyrics.
 - Recently Played hour labels follow the system 24-hour setting, and the Search filter chips are translated.
 - Updated Netty to 4.2.28 for security fixes.
-- Pressing back with the Now Playing screen or the Next up queue open inside a folder in the Folders tab now closes the player instead of leaving the folder ([#136](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/136)).
-- Albums copied to the device while music was playing, while a library scan was running, or while the app was in the background no longer show only some of their songs. Syncs started by new files, pull-to-refresh, and Refresh library no longer wait up to about 15 minutes for playback to stop, and changes that arrive during a scan get a follow-up scan ([#126](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/126)).
-- Listening Stats are easier to find: the Home card is always shown, with loading and "No listening data yet" states, and the Home menu button opens a sidebar with a Listening Stats shortcut ([#142](https://github.com/PixelPlayerHQ/PixelPlayerOSS/issues/142)).
+- Pressing back with the Now Playing screen or the Next up queue open inside a folder in the Folders tab now closes the player instead of leaving the folder ([#136](https://github.com/hcy917/NekoPlayer/issues/136)).
+- Albums copied to the device while music was playing, while a library scan was running, or while the app was in the background no longer show only some of their songs. Syncs started by new files, pull-to-refresh, and Refresh library no longer wait up to about 15 minutes for playback to stop, and changes that arrive during a scan get a follow-up scan ([#126](https://github.com/hcy917/NekoPlayer/issues/126)).
+- Listening Stats are easier to find: the Home card is always shown, with loading and "No listening data yet" states, and the Home menu button opens a sidebar with a Listening Stats shortcut ([#142](https://github.com/hcy917/NekoPlayer/issues/142)).
 - Previous goes back to the previous song during the first 10 seconds of a track. After 3 seconds it used to restart the current song.
 - Adding songs to a playlist or creating one no longer breaks library sorting, search, album colours, the seek bar, and the sleep timer until the app restarts.
 - Closing the player that opens audio files from other apps no longer breaks library sorting, search, album colours, the seek bar, and the sleep timer in the app until it restarts.
@@ -159,7 +162,7 @@ All notable changes to PixelPlayerOSS will be documented in this file.
 ## [0.1.0] - 2026-06-09
 
 ### Initial release
-- First public FOSS release of PixelPlayerOSS, an OSS-focused Android music player.
+- First public FOSS release of NekoPlayer, an OSS-focused Android music player.
 - Includes local music playback, playlists, favorites, lyrics, listening stats, dynamic Material 3 theming, widgets, and backup/restore.
 - Keeps self-hosted library support for Navidrome/Subsonic and Jellyfin, plus optional LRCLIB lyrics and Deezer artist artwork lookups.
 
@@ -171,7 +174,7 @@ All notable changes to PixelPlayerOSS will be documented in this file.
 
 ### Release readiness
 - Added F-Droid metadata, Fastlane store metadata, dependency/license documentation, privacy notes, security notes, and contributor guidance.
-- Release builds now stay unsigned when local signing keys are absent, and `pixelplayer.disableReleaseSigning=true` forces unsigned verification builds even on a maintainer machine.
+- Release builds now stay unsigned when local signing keys are absent, and `nekoplayer.disableReleaseSigning=true` forces unsigned verification builds even on a maintainer machine.
 - Documented third-party asset and dependency licenses, including native/binary Maven artifacts and JitPack source trails.
 
 ### Security and privacy
