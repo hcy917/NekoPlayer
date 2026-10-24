@@ -42,6 +42,7 @@ fun StreamingProviderSheet(
     onNavigateToNavidromeDashboard: () -> Unit = {},
     isJellyfinLoggedIn: Boolean = false,
     onNavigateToJellyfinDashboard: () -> Unit = {},
+    onNavigateToCustomSources: () -> Unit = {},
     sheetState: SheetState = rememberModalSheetState(
         skipPartiallyExpanded = true
     )
@@ -127,6 +128,18 @@ fun StreamingProviderSheet(
                             } else {
                                 context.startActivity(Intent(context, JellyfinLoginActivity::class.java))
                             }
+                            onDismissRequest()
+                        }
+                    )
+
+                    ProviderRow(
+                        iconPainter = painterResource(R.drawable.ic_custom_source),
+                        iconTint = Color(0xFF7C6BF5),
+                        title = stringResource(R.string.custom_source_row_title),
+                        subtitle = stringResource(R.string.custom_source_row_subtitle),
+                        shape = providerSegmentItemShape,
+                        onClick = {
+                            onNavigateToCustomSources()
                             onDismissRequest()
                         }
                     )

@@ -26,6 +26,7 @@ espressoCore = "3.7.0"
 kotlinx-coroutines = "1.11.0"
 kotlinxCollectionsImmutable = "0.5.1"
 kotlinxSerializationJson = "1.11.0"
+quickjsAndroid = "3.2.3"
 lifecycleRuntimeKtx = "2.11.0"
 activityCompose = "1.13.0"
 composeBom = "2026.06.01"
@@ -149,6 +150,7 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+quickjs-wrapper-android = { module = "wang.harlon.quickjs:wrapper-android", version.ref = "quickjsAndroid" }
 ktor-server-core = { group = "io.ktor", name = "ktor-server-core-jvm", version.ref = "ktor" }
 ktor-server-cio = { group = "io.ktor", name = "ktor-server-cio-jvm", version.ref = "ktor" }
 material = { module = "com.google.android.material:material", version.ref = "material" }

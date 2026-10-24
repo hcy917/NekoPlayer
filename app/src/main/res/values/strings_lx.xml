@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom JS audio sources (ported from downstream LX source feature) -->
+<resources>
+    <string name="lx_export_js">Export JS sources</string>
+    <string name="lx_import">Import</string>
+    <string name="lx_import_url_title">Download JS from URL</string>
+    <string name="lx_info_title">JS engine info</string>
+    <string name="lx_js_ready">Ready</string>
+    <string name="lx_music_title">Cloud Music</string>
+    <string name="lx_no_js_desc">Tap the + above to pick a userApi.js from your device, or tap cloud to download by URL.</string>
+    <string name="lx_no_js_title">No JS source loaded</string>
+    <string name="lx_ok">OK</string>
+    <string name="lx_search_hint">Import a JS userApi.js first, then type keywords here.</string>
+    <string name="lx_search_placeholder">Search</string>
+    <string name="lx_source_all">All</string>
+    <string name="lx_start_engine">Start Engine</string>
+    <string name="market_downloading">Downloading… %1$d%%</string>
+    <string name="market_install">Install</string>
+    <string name="market_installed">Installed</string>
+    <string name="market_installed_count">%1$d sources installed</string>
+    <string name="market_no_sources">No sources to test yet — install a source script first</string>
+    <string name="market_parsing">Parsing scripts…</string>
+    <string name="market_refresh">Refresh</string>
+    <string name="market_source_builtin">Built-in</string>
+    <string name="market_source_plugin">Plugin</string>
+    <string name="market_source_test_desc">Runs a real search per source; JS sources also fetch a play URL</string>
+    <string name="market_source_test_title">Source connectivity test</string>
+    <string name="market_subtitle">Download and install community source scripts from GitHub</string>
+    <string name="market_tap_expand">Tap to download and inspect the scripts</string>
+    <string name="market_test">Test</string>
+    <string name="market_test_all">Test all</string>
+    <string name="market_test_failed">Unavailable</string>
+    <string name="market_testing">Testing…</string>
+    <string name="market_test_search_only">Search OK</string>
+    <string name="market_test_success">Available</string>
+    <string name="market_title">Pixel Source Market</string>
+    <string name="custom_source_row_title">Custom sources</string>
+    <string name="custom_source_row_subtitle">Import and manage JS source scripts</string>
+    <string name="lx_open_market">Source market</string>
+</resources>

@@ -94,4 +94,10 @@ sealed class Screen(val route: String) {
         fun createRoute(songId: String) = "audio_bookmarks/${Uri.encode(songId)}"
     }
 
+    /** Custom JS audio sources (ported LX source feature), reached from the streaming sheet. */
+    object CustomSources : Screen("custom_sources")
+
+    /** Community source scripts market for the custom source feature. */
+    object SourceMarket : Screen("source_market")
+
 }

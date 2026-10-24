@@ -671,6 +671,51 @@ fun AppNavigation(
                     )
                 }
             }
+            // Custom JS audio sources, opened from the "云端串流" provider sheet.
+            composable(
+                Screen.CustomSources.route,
+                enterTransition = { enterTransition() },
+                exitTransition = { exitTransition() },
+                popEnterTransition = { popEnterTransition() },
+                popExitTransition = { popExitTransition() },
+            ) {
+                moe.shimmerfly.nekoplayer.presentation.screens.lx.LxMusicScreen(
+                    onOpenPlayer = { url, title, artist, cover, songId ->
+                        val effectiveId = songId.ifBlank { url.hashCode().toString() }
+                        val song = moe.shimmerfly.nekoplayer.data.model.Song(
+                            id = "lx:$effectiveId",
+                            title = title.ifBlank { url },
+                            artist = artist.ifBlank { "Unknown artist" },
+                            artistId = -1L,
+                            album = "",
+                            albumId = -1L,
+                            path = url,
+                            contentUriString = url,
+                            albumArtUriString = cover.takeIf { it.isNotBlank() },
+                            duration = 0L,
+                            mimeType = null,
+                            bitrate = null,
+                            sampleRate = null,
+                        )
+                        playerViewModel.playSongs(listOf(song), song, "自定义音源")
+                    },
+                    onOpenMarket = {
+                        navController.navigateSafely(Screen.SourceMarket.route)
+                    },
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(
+                Screen.SourceMarket.route,
+                enterTransition = { enterTransition() },
+                exitTransition = { exitTransition() },
+                popEnterTransition = { popEnterTransition() },
+                popExitTransition = { popExitTransition() },
+            ) {
+                moe.shimmerfly.nekoplayer.presentation.screens.lx.SourceMarketScreen(
+                    onBackClick = { navController.popBackStack() }
+                )
+            }
             composable(
                 Screen.JellyfinDashboard.route,
                 enterTransition = { enterTransition() },

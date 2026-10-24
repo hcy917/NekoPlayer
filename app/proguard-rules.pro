@@ -73,3 +73,11 @@
     public static int d(...);
     public static int i(...);
 }
+
+# ── 自定义 JS 音源（QuickJS 桥）────────────────────────────────────────────
+# 脚本回调通过 QuickJS 的 JSCallFunction 反射式调用进入 Kotlin，保留引擎与模型签名，
+# 避免 R8 重命名后 JS 侧对象属性/方法名对不上。
+-keep class moe.shimmerfly.nekoplayer.data.lx.** { *; }
+-keep class com.whl.quickjs.wrapper.** { *; }
+-keep class com.whl.quickjs.android.** { *; }
+-dontwarn com.whl.quickjs.**

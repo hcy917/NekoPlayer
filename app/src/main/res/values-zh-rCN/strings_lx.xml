@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义 JS 音源（移植自下游 LX 音源功能） -->
+<resources>
+    <string name="lx_export_js">导出 JS 音源</string>
+    <string name="lx_import">导入</string>
+    <string name="lx_import_url_title">从 URL 下载 JS</string>
+    <string name="lx_info_title">JS 引擎信息</string>
+    <string name="lx_js_ready">已就绪</string>
+    <string name="lx_music_title">云音</string>
+    <string name="lx_no_js_desc">点右上角 + 从本地选择 userApi.js，或点云图标用 URL 下载。</string>
+    <string name="lx_no_js_title">尚未导入 JS 音源</string>
+    <string name="lx_ok">好</string>
+    <string name="lx_search_hint">请先导入 JS 音源，然后在这里输入关键词。</string>
+    <string name="lx_search_placeholder">搜索</string>
+    <string name="lx_source_all">全部</string>
+    <string name="lx_start_engine">开始使用</string>
+    <string name="market_downloading">下载中… %1$d%%</string>
+    <string name="market_install">安装</string>
+    <string name="market_installed">已安装</string>
+    <string name="market_installed_count">已安装 %1$d 个音源</string>
+    <string name="market_no_sources">暂无可测试的音源，先安装音源脚本</string>
+    <string name="market_parsing">解析脚本…</string>
+    <string name="market_refresh">刷新</string>
+    <string name="market_source_builtin">内置</string>
+    <string name="market_source_plugin">插件</string>
+    <string name="market_source_test_desc">对每个音源发起一次真实搜索，JS 音源再取一次播放地址</string>
+    <string name="market_source_test_title">音源连通性测试</string>
+    <string name="market_subtitle">从 GitHub 仓库下载并安装社区音源脚本</string>
+    <string name="market_tap_expand">点击展开以下载并查看脚本</string>
+    <string name="market_test">测试</string>
+    <string name="market_test_all">全部测试</string>
+    <string name="market_test_failed">不可用</string>
+    <string name="market_testing">测试中…</string>
+    <string name="market_test_search_only">搜索可用</string>
+    <string name="market_test_success">可用</string>
+    <string name="market_title">像素音源市场</string>
+    <string name="custom_source_row_title">自定义音源</string>
+    <string name="custom_source_row_subtitle">导入并管理 JS 音源脚本</string>
+    <string name="lx_open_market">音源市场</string>
+</resources>

@@ -257,6 +257,7 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.gson)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.quickjs.wrapper.android)
     implementation(libs.snakeyaml)
     implementation(libs.kotlinx.collections.immutable)
     implementation(libs.ktor.server.core)

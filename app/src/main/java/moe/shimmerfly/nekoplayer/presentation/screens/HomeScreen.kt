@@ -604,6 +604,9 @@ fun HomeScreen(
             isJellyfinLoggedIn = isJellyfinLoggedIn,
             onNavigateToJellyfinDashboard = {
                 navController.navigateSafely(Screen.JellyfinDashboard.route)
+            },
+            onNavigateToCustomSources = {
+                navController.navigateSafely(Screen.CustomSources.route)
             }
         )
     }
